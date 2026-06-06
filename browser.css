@@ -1,0 +1,13 @@
+/* Silt - Browser colors for Brave/Chromium custom CSS */
+:root {
+  --silt-bg: #1a1812;
+  --silt-fg: #d2cbbe;
+  --silt-accent: #5a9db3;
+  --silt-muted: #3b3b32;
+  --silt-red: #b5786a;
+  --silt-green: #7d9a7e;
+  --silt-yellow: #c4a87a;
+  --silt-blue: #3e6a7d;
+  --silt-magenta: #8b7a8b;
+  --silt-cyan: #5a8a94;
+}

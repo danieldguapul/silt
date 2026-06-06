@@ -1,0 +1,18 @@
+/**
+ * @name Silt
+ * @description A dark moody theme with warm muted tones
+ * @version 1.0
+ */
+
+:root {
+  --background: #1a1812;
+  --foreground: #d2cbbe;
+  --accent: #5a9db3;
+  --muted: #3b3b32;
+  --red: #b5786a;
+  --green: #7d9a7e;
+  --yellow: #c4a87a;
+  --blue: #3e6a7d;
+  --magenta: #8b7a8b;
+  --cyan: #5a8a94;
+}

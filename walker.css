@@ -1,0 +1,54 @@
+@define-color selected-text #5a9db3;
+@define-color text #d2cbbe;
+@define-color base #1a1812;
+@define-color border #3b3b32;
+@define-color foreground #d2cbbe;
+@define-color background #1a1812;
+@define-color bright_blue #2b2617;
+@define-color bright_magenta #3b3b32;
+
+window {
+    background-color: transparent;
+    background-image: radial-gradient(circle at center, rgba(11, 14, 23, 0.85) 0%, rgba(11, 14, 23, 0.5) 10%, rgba(11, 14, 23, 0) 42%);
+    transition: opacity 600ms ease;
+}
+
+window .box-wrapper,
+#box {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    transition: opacity 600ms ease, background-color 600ms ease;
+    background-image:
+        linear-gradient(to bottom right, transparent 0 10px, @bright_blue 10px, @bright_magenta 13px, transparent 13px),
+        linear-gradient(to bottom left, transparent 0 10px, @bright_blue 10px, @bright_magenta 13px, transparent 13px),
+        linear-gradient(to top left, transparent 0 10px, @bright_blue 10px, @bright_magenta 13px, transparent 13px),
+        linear-gradient(to top right, transparent 0 10px, @bright_blue 10px, @bright_magenta 13px, transparent 13px),
+        linear-gradient(to bottom right, transparent 0 12px, @background 12px),
+        linear-gradient(to bottom left, transparent 0 12px, @background 12px),
+        linear-gradient(to top left, transparent 0 12px, @background 12px),
+        linear-gradient(to top right, transparent 0 12px, @background 12px),
+        linear-gradient(to right, @bright_blue, @bright_magenta),
+        linear-gradient(to right, @bright_blue, @bright_magenta),
+        linear-gradient(to bottom, @bright_blue, @bright_magenta),
+        linear-gradient(to bottom, @bright_blue, @bright_magenta),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background),
+        linear-gradient(@background, @background);
+    background-size:
+        16px 16px, 16px 16px, 16px 16px, 16px 16px,
+        16px 16px, 16px 16px, 16px 16px, 16px 16px,
+        calc(100% - 32px) 3px, calc(100% - 32px) 3px,
+        3px calc(100% - 32px), 3px calc(100% - 32px),
+        calc(100% - 32px) calc(100% - 32px),
+        calc(100% - 32px) 16px, calc(100% - 32px) 16px,
+        16px calc(100% - 32px), 16px calc(100% - 32px);
+    background-position:
+        top left, top right, bottom right, bottom left,
+        top left, top right, bottom right, bottom left,
+        top center, bottom center, center left, center right,
+        center, top center, bottom center, center left, center right;
+    background-repeat: no-repeat;
+}
